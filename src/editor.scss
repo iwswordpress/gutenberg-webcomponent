@@ -1,0 +1,5 @@
+$start-color: green;
+$end-color: red;
+h1.gtg-demo-h1 {
+	background: linear-gradient(to bottom, $start-color, $end-color);
+}
