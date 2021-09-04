@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Web Component
  * Description: A simple WordPress plugin that allows user to create recipes and rate those recipes
- * Version: 1.0
+ * Version: 1.1
  * Author: Craig West
  * Author URI: https://udemy.com
  * Text Domain: webcomponent
@@ -12,6 +12,10 @@ function gtg_demo_register_block() {
 	wp_register_script(
 		'mycomponent',
 		plugins_url('src/mycomponent.js', __FILE__ )
+	);
+  	wp_register_script(
+		'mycomponent',
+		plugins_url('build/mycomponent.js', __FILE__ )
 	);
   wp_register_script(
     'gtg-demo-editor-script',

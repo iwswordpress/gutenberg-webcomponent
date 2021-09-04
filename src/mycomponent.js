@@ -30,7 +30,9 @@ customElements.define(
 			// Shadow DOM can acces elements in Light DOM but not the other way around
 			const lightDiv = document.getElementById('light');
 			const lightContent = lightDiv.textContent;
-			console.log('Light DIV content = ' + lightContent);
+			console.log('%cMYCOMPONENT - SRC', 'color:blue;font-size:18px');
 		}
 	},
 );
+
+alert('hello from src');
